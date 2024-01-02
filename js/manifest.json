@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Uncheck All Checkboxes",
+  "version": "1.0",
+  "description": "A browser extension that unchecks all checkboxes",
+  "permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
