@@ -1,14 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "Uncheck All Checkboxes",
+  "name": "Checkbox Auto-Check",
   "version": "1.0",
-  "description": "A browser extension that unchecks all checkboxes",
-  "permissions": ["<all_urls>"],
+  "description": "Automatically checks checkboxes on web pages.",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "run_at": "document_end"
+      "js": ["content.js"]
     }
   ]
 }
