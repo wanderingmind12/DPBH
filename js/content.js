@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.action === 'checkCheckboxes') {
-    checkAllCheckboxes();
+      checkAllCheckboxes();
   }
   else if (request.action === 'uncheckCheckboxes') {
     uncheckAllCheckboxes();
@@ -17,7 +17,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 function checkAllCheckboxes() {
   var checkboxes = document.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach(function(checkbox) {
-    checkbox.checked = checkbox.defaultChecked;
+      checkbox.checked = checkbox.defaultChecked;
   });
 }
 function uncheckAllCheckboxes() {
@@ -26,3 +26,5 @@ function uncheckAllCheckboxes() {
     checkbox.checked = false;
   });
 }
+
+
