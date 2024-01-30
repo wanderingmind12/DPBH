@@ -16,8 +16,8 @@ Light Weight: Unchecked is built with a lightweight architecture, ensuring minim
 
 
 ## Installation Process
-1. Download Zip file and extraxt the js file present in DPBH folder then extract in some directory.
-2. Now open your browser and open manage extension in brower.
+1. Download Zip file and extract the js file present in DPBH folder then extract in some directory.
+2. Now open your browser and open manage extension in browser.
 3. Enable developer mode.
 4. Click on load unpacked.
 5. Locate the directory in which folder is extracted.
