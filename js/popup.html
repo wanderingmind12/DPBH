@@ -6,39 +6,108 @@
   <!-- styling of the popup goes here. -->
   <style>
     body {
-      height: 180px;
-      width: 150px;
+      height: 300px;
+      width: 180px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background: #FFB1A4;
+      background: #2b2b2b;
     }
-    .BTN{
+    h1{
+      color: blanchedalmond;
+      font-size: 20px;
+    }
+    h2{
+      color: blanchedalmond;
+    }
+    #img{
+      height: 50px;
+      width: 50px;
+    }
+    .exception{
+      display: flex;
       
+    }
+    #Head{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+    #revert{
       height: 40px;
       width: 100px;
       margin: 10px;
       padding: 10px;
       border-radius: 40px;
-      border: 2px solid #000000;
-      background-color: #fff;
       font-size: 16px;
       cursor: pointer;
       color: #ffffff;
-      background-color: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
+      background-color: rgba(255, 9, 9, 0.278);
+      border: 1px solid rgb(255, 60, 60);
       backdrop-filter: blur(10px);
     }
-    .BTN:hover{
-      background-color: rgba(255,255,255,0.1);
+    #removeExceptionButton{
+      height: 40px;
+      width: 40px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #ffffff;
+      background-color: rgba(255, 9, 9, 0.278);
+      border: 1px solid rgb(255, 60, 60);
+      backdrop-filter: blur(10px);
+    }
+    #uncheckBtn{
+      height: 40px;
+      width: 100px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #ffffff;
+      background-color: rgba(9, 255, 9, 0.278);
+      border: 1px solid rgb(32, 237, 32);
+      backdrop-filter: blur(10px);
+    }
+    #addExceptionButton{
+      height: 40px;
+      width: 40px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #ffffff;
+      background-color: rgba(9, 255, 9, 0.278);
+      border: 1px solid rgb(32, 237, 32);
+      backdrop-filter: blur(10px);
+    }
+    #revert:hover{
+      background-color: rgba(245, 14, 14, 0.566);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    #uncheckBtn:hover{
+      background-color: rgba(9, 255, 9, 0.566);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    #removeExceptionButton:hover{
+      background-color: rgba(245, 14, 14, 0.566);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    #addExceptionButton:hover{
+      background-color: rgba(9, 255, 9, 0.566);
       border: 1px solid rgba(255,255,255,0.2);
     }
     .blob {
   position: absolute;
   top: 0;
   left: 0;
-  fill: #396cb5;
+  fill: #727575;
   width: 50vmax;
   z-index: -1;
   animation: move 10s ease-in-out infinite;
@@ -62,9 +131,17 @@
   </svg>
 </div>
 <!-- BUTTONS  -->
-<h1>Uncheck</h1>
+<div id="Head">
+<img id='img' src="logo.png" alt="">
+  <h1>UnChecked</h1>
+</div>
 <button id="revert" class="BTN">Revert</button>
 <button id="uncheckBtn" class="BTN">Uncheck</button>
+<h2>Exception</h2>
+<div class="exception">
+<button id="addExceptionButton">+</button>
+<button id="removeExceptionButton">-</button>
+</div>
 <script src="popup.js"></script>
 </body>
 </html>

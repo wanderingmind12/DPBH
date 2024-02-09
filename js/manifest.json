@@ -1,10 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "UnCheckbox",
+  "name": "Checkbox",
   "version": "1.0",
   "description": "Automatically checks checkboxes on web pages.",
-  "permissions": ["activeTab"],
+  "permissions": ["storage","activeTab"],
   "browser_action": {
+    "default_icon": "logo.png",
     "default_popup": "popup.html"
   },
   "content_scripts": [
